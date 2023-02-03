@@ -1,0 +1,196 @@
+# Codebook
+
+The codebook has separate sections devoted to each of the 5 datasets. The codebook is not comprehensive as the final datasets included have some derived variables. We have also included some sociodemographic and other variables not part of the analysis, but part of the data that was collected to aid exploration.
+
+-----------------------------------------------
+
+## YouGov
+
+* Administrative Variables
+  - caseid: Respondent ID (from YG)
+  - weight: Case weight (from YG)
+
+* Perceived Share of Party Stereotypical Groups in the Parties
+  - dem_black: Percent Democratic Party Supporters -Black
+  - dem_union: Percent Democratic Party Supporters- Union members 
+  - dem_aa: Percent Democratic Party Supporters- Atheist or agnostic
+  - dem_lgb: Percent Democratic Party Supporters- Gay, lesbian, or bisexual
+  - rep_evang: Percent Republican Party Supporters- Evangelical Christian
+  - rep_rich: Percent Republican Party Supporters- Earning over $250,000 per year
+  - rep_old: Percent Republican Party Supporters- 65 years or older 
+  - rep_south: Percent Republican Party Supporters- Southerners 
+
+* Sociodemographics:
+  - birthyr: Birth Year
+  - gender: Gender
+  - race: Race
+  - educ: Education
+  - marstat: Marital Status
+  - employ: Employment Status
+  - inputstate: State of Residence
+  - faminc: Family income
+
+* Religion
+  - religpew: Pew religion
+  - pew_religimp: Importance of religion (Pew version)
+  - pew_churatd: Church attendance (Pew version)
+  - pew_bornagain: Born Again (Pew version)
+  - pew_prayer: Frequency of Prayer (Pew version)
+
+* Political Variables
+  - pid3 3 point party ID
+  - pid7 7 point Party ID
+  - votereg Voter Registration Status
+  - ideo5 Ideology
+  - newsint Political Interest; newsint_r is the numerical version of the variable
+
+-----------------------------------------------
+
+## MTurk Alternative Explanations Study
+
+* Administrative
+  - condition --- baserates_given, complexask (sum to 100 condition), incentive, simpleask (standard condition)
+
+* Perceptions
+  - rep_south: Percent Republican Party Supporters- Southerners 
+  - rep_old: Percent Republican Party Supporters- 65 years or older
+  - rep_evang: Percent Republican Party Supporters- Evangelical Christian
+  - rep_rich: Percent Republican Party Supporters- Earning over $250,000 per year
+  - dem_black: Percent Democratic Party Supporters -Black
+  - dem_lgb: Percent Democratic Party Supporters- Gay, lesbian, or bisexual
+  - dem_aa: Percent Democratic Party Supporters- Atheist or agnostic
+  - dem_union: Percent Democratic Party Supporters- Union members 
+
+* Sociodem
+  - state
+  - gender
+  - education
+  - pid   
+
+## Mturk Study for Assessing Impact on Partisan Affect
+
+* Administrative
+  - exp_cond
+
+* Social Distance
+  - yard_sign
+  - potus
+  - movement
+
+* Sociodemographics
+  - state
+  - gender
+  - education
+  - age
+  - pid
+
+* Perceptions of Composition
+  - rep_south: Percent Republican Party Supporters- Southerners 
+  - rep_old: Percent Republican Party Supporters- 65 years or older
+  - rep_evang: Percent Republican Party Supporters- Evangelical Christian
+  - rep_rich: Percent Republican Party Supporters- Earning over $250,000 per year
+  - dem_black: Percent Democratic Party Supporters -Black
+  - dem_lgb: Percent Democratic Party Supporters- Gay, lesbian, or bisexual
+  - dem_aa: Percent Democratic Party Supporters- Atheist or agnostic
+  - dem_union: Percent Democratic Party Supporters- Union members 
+
+## Mturk Study for Assessing Impact on Perceived Extremity
+
+* Administrative
+  - responseid
+  - condition
+
+* Feeling thermometers
+  - ft_south
+  - ft_union
+  - ft_evang
+  - ft_young
+  - ft_aa (Atheists or Agnostics)
+  - ft_black
+  - ft_rich
+  - ft_lgb (LGBT)
+
+* Sociodemographics
+  - state
+  - gender
+  - education
+  - age
+
+## IGS Poll
+
+* Perceptions of composition
+  - rep_rich: Percent Republican Party Supporters- Earning over $250,000 per year
+  - rep_oc: Percent California Republican Party Supporters from Orange County
+  - rep_old: Percent Republican Party Supporters- 65 years or older
+  - dem_aa: Percent Democratic Party Supporters- Atheist or agnostic
+  - dem_union: Percent Democratic Party Supporters- Union members 
+  - dem_lgb: Percent Democratic Party Supporters- Gay, lesbian, or bisexual
+ 
+q19, q98, q147, q148 were asked on a 0 to 100 sliding scale
+policy1, policy2, policy3, policy4, policy5, policy6 contain the policy statement asked about
+
+* q5: Do you support or oppose the following statements about politics and public policy?
+  - q5_1 --- see policy1
+  - q5_2 --- see policy2
+  - q5_3 --- see policy3
+  - q5_4 --- see policy4
+  - q5_5 --- see policy5
+  - q5_6 --- see policy6
+
+Before q19/q98, a preface read:
+A representative sample of Californians was recently asked whether they supported or opposed each of these six statements. 
+We are interested in the percentage of Democratic (Republican) respondents that you think supported each of these statements.
+
+
+* q19/q147: What percentage of Democratic respondents do you think supported each of these statements?
+  - q19_1 --- see policy1
+  - q19_2 --- see policy2
+  - q19_3 --- see policy3
+  - q19_4 --- see policy4
+  - q19_5 --- see policy5
+  - q19_6 --- see policy6
+
+* q98/q148: What percentage of Republican respondents do you think supported each of these statements?
+  - q98_1 --- see policy1
+  - q98_2 --- see policy2
+  - q98_3 --- see policy3
+  - q98_4 --- see policy4
+  - q98_5 --- see policy5
+  - q98_6 --- see policy6
+
+* Feeling Thermometers: On a scale of 0 to 100, where 0 is feeling extremely unfavorably, and 100 is feeling
+extremely favorably, how do you feel about each of these groups?
+  - ft_black
+  - ft_white
+  - ft_latino
+  - ft_old
+  - ft_young
+  - ft_south
+  - ft_evang
+  - ft_mormon
+  - ft_aa (Atheist/Agnostic)
+  - ft_rich
+  - ft_union
+  - ft_lgb (LGBT)
+
+* sociodem
+  - education
+  - age
+  - race
+  - religion
+  - gender
+  - income
+
+* administrative
+  - weight
+
+* political 
+  - repub
+  - strongpartisan
+  - pid_7
+  - pid_3
+
+* social distance
+  - sd_marry_text
+  - sd_nbor_text
+  - sd_potus_text
